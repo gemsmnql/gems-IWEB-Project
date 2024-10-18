@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>Contact | gems</title>
+	<meta charset = "utf-8/">
+	<link rel = "stylesheet" href = "CSS/style.css" type = "text/css"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+	<meta name = "description" content = "Gems Vinyl is a premium platform dedicated to providing music lovers with a curated selection of vinyl records and high-quality audio equipment, helping customers elevate their listening experience."/>
+	<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bruno Ace' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Instrument Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Baumans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chakra Petch' rel='stylesheet'>
+	<link rel = "icon" type = "images/png" sizes = "32x32" href = "images/favicon.png"/>
+
+</head>
+<body>
+    <!-- Gems Logo -->
+    <header id="nav-bar">
+        <div class="logo">
+            <a href = "index.html">
+                <img src="images/favicon.png" alt="Gems Logo">  
+            </a>
+        </div>
+        <div class = "gemsword">
+            <a href = "index.html" id = "gemsword"> 
+                gems
+            </a>
+        </div>
+
+        <!-- Tablet, Mobile View -->
+		 <nav class = "tablet-mobile-nav">
+            <div id = "menu-links" class = "off-screen-menu">
+                <a href = "index.html">Home</a>
+                <a href = "vinyls.html">Vinyls</a>
+                <a href = "equip.html">Audio Equipments</a>
+                <a href = "contact.html">Contact</a>
+                <div id = "icons">
+                    <a href = "product.html"><img src = "images/326700_cart_shopping_icon.png"/>Cart</a>
+                    <a href = "login.html"><img src = "images/9035117_person_icon.png"/>Login</a>
+                </div>
+            </div>
+            <nav>
+                <div class="ham-menu" onclick = "ham()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </nav>
+        <!-- Desktop View -->
+        <nav class = "desktop">
+            <ul> 
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "vinyls.html">Vinyls</a></li>
+                <li><a href = "equip.html">Audio Equipments</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-icons">
+            <a href="#"><img src="images/326700_cart_shopping_icon.png" alt="Cart"></a>
+            <a href="login.html"><img src="images/9035117_person_icon.png" alt="Login"></a>
+        </div>
+    </header>
+
+		<!-- Audio Equipments -->
+		<main id = "content">
+            <section class="contact-section">
+                <h1>Contact</h1>
+                <form action="submit_form.php" method="post">
+                    <input type="text" name="name" placeholder="Name" id = "name" required>
+                    <input type="email" name="email" placeholder="Email*" id = "email" required>
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <textarea name="comment" placeholder="Comment" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+            
+            <footer>
+                <div class="footer-info">
+                    <div class="products-footer">
+                        <h3>Products</h3>
+                        <ul>
+                            <br><li><a href="vinyls.html">Vinyls</a></li>
+                            <br><li><a href="equip.html">Turntables</a></li>
+                            <br><li><a href="equip.html">Speakers</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <a href = "index.html">  
+                            gems
+                        </a><br>
+                        <br><p>&copy; James Mananquil</p><br>
+                        <div class = "socmedicons">
+                            <a href = "https://www.facebook.com/gemsmnql/" target = "_blank">
+                                <img src = "images/2959749_facebook_icon.png"/>
+                            </a>
+                            <a href = "https://www.facebook.com/gemsmnql/" target = "_blank">
+                                <img src = "images/1159683_instagram_instagram logo_icon.png"/>
+                            </a>
+                            <a href = "https://www.facebook.com/gemsmnql/" target = "_blank">
+                                <img src = "images/4691507_gmail_icon.png"/>
+                            </a>
+                            <a href = "https://www.facebook.com/gemsmnql/" target = "_blank">
+                                <img src = "images/6214715_github_logo_icon.png"/>
+                            </a>
+
+                        </div>
+
+                        <p>Contact:</p>
+                        <p>(0921) 631 0153</p>
+                        <p>musicgems@gmail.com</p>
+                    </div>
+                    <div class="services">
+                        <h3>Services</h3>
+                        <ul>
+                            <br><li><a href="contact.html">Contact</a></li>
+                            <br><li><a href="#">Cart</a></li>
+                            <br><li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+    <script src = "scripts/script.js"></script>  
+</body>
+</html>
